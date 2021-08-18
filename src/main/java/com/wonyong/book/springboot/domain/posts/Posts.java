@@ -13,7 +13,7 @@ public class Posts extends BaseTimeEntity {
 
     @Id //기본키
     @GeneratedValue(strategy = GenerationType.IDENTITY) //GenerationType.IDENTITY : auto increment
-    private Long Id;
+    private Long id;
 
     //column이 없더라고 컬럼이 적용되지만 기본값 이외에 변경이 필요한 옵션이 있을때 사용
     @Column(length = 500, nullable = false)
